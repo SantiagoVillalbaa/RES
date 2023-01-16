@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Res</title>
+
+    <!-- Pagina de Iconos -->
+    <script src="https://kit.fontawesome.com/a035268f4c.js" crossorigin="anonymous"></script>
+
+    <!-- Toatify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <!-- Link Letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- Link BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Link css -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light  navegador">
+            <a class="navbar-brand" href="/index.html">
+                <img src="https://www.res.com.ar/static/version1670848415/frontend/Res/Res/es_AR/images/logo.svg" alt="logo res" srcset="" class="imgLogo">
+            </a>
+            <div class="container-md">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav d-flex align-items-center ms-auto navegador">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active text-black" aria-current="page">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./pages/tienda.html" class="nav-link text-black">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./pages/ofertas.html" class="nav-link text-black">OFERTAS</a>
+                        </li>
+                        <div class="botonesHeader">
+                            <!-- <button><i class="fa-solid fa-heart"></i></button> -->
+                            <button id="verCarrito"><i class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="sobreNosotros">
+                <img src="https://meatpalace-ramilo.web.app/static/media/aside.6d5e8a3ec73b2dc8cb0e.webp" alt="foto de carne">
+                <div class="nosotrosInfo">
+                    <h2>Sobre Nosotros</h2>
+                    <p>
+                        Sed suscipit et ex eget sagittis. Phasellus a quam enim. Nullam ut suscipit metus. Aliquam porttitor porttitor congue. Cras commodo quam et nisl tempus scelerisque. Cras tempus mauris sed mauris sollicitudin sagittis. In vitae justo mi. Sed elementum luctus pulvinar.
+                    </p>
+                    <p>
+                        Donec elit ipsum, cursus at congue non, euismod ac turpis. Donec lacinia felis quis sem consectetur, at elementum justo aliquet. Pellentesque nulla ex, pulvinar ac dolor ac, tincidunt mollis leo. Morbi gravida, metus vel feugiat luctus, elit ex tempor lacus, id consequat orci urna quis orci. In sagittis orci est, in porttitor mi elementum et. Morbi at lorem at nibh gravida malesuada vel sit amet leo. Pellentesque in massa congue, bibendum lacus a, gravida diam.
+                    </p>
+            </div>
+        </section>
+        <section>
+            <h3 class="tituloDestacados"><!-- <i class="fa-solid fa-star"></i> -->NUESTRAS ESPECIALIDADES</h3>
+            <div id="productosDestacados" class="contenedorDestacados" >
+            </div>
+            <button class="botonCarnes"><a href="./pages/tienda.html">VER TODO</a></button>
+        </section>
+        
+        <!-- MODAL CARRITO -->
+        <div id="modalCarrito" class="modalCarrito"></div>
+
+        <section>
+            <h3 class="tituloLocales">NUESTROS LOCALES</h3>
+            <div class="sucursales">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=12UFTecdg9aodU335MBNytXnrHOxflBo&ehbc=2E312F"></iframe>
+            </div>
+        </section>
+
+        <!-- Formulario de contacto -->
+        <section  id="Contacto" class="seccion-form">
+            <h3 class="titulo-contacto">Contactános!</h3>
+            <div data-aos-duration="1500" data-aos="fade-up" class="contenedor-form-text">
+                <form action="" method="POST">
+                    <div class="contenedor-label-input">
+                      <label  for="">Nombre: </label>
+                      <input  class="form-control" type="text">
+                    </div>
+                    <div class="contenedor-label-input">
+                      <label  for="">Telefono: </label>
+                      <input  class="form-control" type="text">
+                    </div>
+                    <div class="contenedor-label-input">
+                      <label  for="">Email: </label>
+                      <input  class="form-control" type="text">
+                    </div>
+                    <div  class="contenedor-label-input">
+                      <label  for="">Consulta: </label>
+                      <textarea class="form-control" name="" id="" cols="10" rows="5"></textarea>
+                    </div>
+                    <div class="contenedor-btn-contacto">
+                      <button class="boton-form">Contactar</button>
+                    </div>
+                </form>
+            </div >
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <header class="footer-header">
+                <div class="fh-line"></div>
+                <div class="fh-logo">
+                    <img src='https://www.res.com.ar/static/version1670848415/frontend/Res/Res/es_AR/images/logo.svg' alt="Res Logo" />
+                </div>
+                <div class="fh-line"></div>
+            </header>
+            <!-- <p class="footer-legend">
+                “En Don K contamos con los mejores cortes tanto importados como locales para satisfacer plenamente a nuestros clientes, que es nuestro principal objetivo. También disponemos de los mejores quesos, embutidos y panes para acompañar una Hamburguesa perfecta.”
+            </p> -->
+            <nav class="navFooter">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item ">
+                      <a class="nav-link active letra" aria-current="page"  href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link letra" href="./pages/tienda.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link letra" href="./pages/ofertas.html">Ofertas</a>
+                    </li>
+                  </ul>
+            </nav>
+            <a href='#' class='subir-arriba'> 
+                <i class="fa-solid fa-arrow-up "></i>
+            </a>
+
+            <div class="footer-developed-by">
+                <p>Desarrollado por <span>Santiago Villalba</span></p>
+                <a href="https://www.linkedin.com/in/santiago-villalba-desarrolador-web/"
+                   target="_blank" 
+                   rel="noreferrer"
+                   class="github-btn"
+                >
+                <i class="fa-brands fa-linkedin botonLink"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/productosDestacados.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/carrito.js"></script>
+</body>
+</html>
